@@ -1,0 +1,3 @@
+### create docker container
+
+### run docker mounting the data and out dirs
