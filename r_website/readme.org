@@ -9,5 +9,5 @@ docker build -t my-shiny-app1 .
 
 #To run: localport:containerport
 # docker run --env PORT=3838 my-shiny-app1 env
-docker run --rm -p 3838:3838 my-shiny-app1
+docker run --rm -p 3838:3838  --env PORT=3838 my-shiny-app1
 
