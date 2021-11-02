@@ -1,0 +1,9 @@
+To creat a new docker image a good strat is to start with:
+
+docker run -it --entrypoint "/bin/bash" ubuntu:20.04
+
+This will start an interactive ubuntu basic docker.
+
+You can then install what you need and make a note of how you do it.
+
+You then change the notes into your docker file
