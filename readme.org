@@ -7,3 +7,15 @@ This will start an interactive ubuntu basic docker.
 You can then install what you need and make a note of how you do it.
 
 You then change the notes into your docker file
+
+For Heroku, install and signup.(https://devcenter.heroku.com/articles/container-registry-and-runtime)
+
+Then naviage to a dir and run
+
+heroku create
+
+heroku container:push web (you may need to do -a and the app name)
+
+heroku container:release web
+
+heroku open
