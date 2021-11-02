@@ -1,0 +1,13 @@
+## To run not in docker container
+R -e "shiny::runApp('server.r', host='0.0.0.0', port=3838)"
+
+
+
+#To create docker image:
+
+docker build -t my-shiny-app1 .
+
+#To run: localport:containerport
+
+docker run --rm -p 3838:3838 my-shiny-app1
+
