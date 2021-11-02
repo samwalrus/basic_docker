@@ -1,21 +1,25 @@
-To creat a new docker image a good strat is to start with:
+To create a new docker image a good stratagy is to start with:
 
 docker run -it --entrypoint "/bin/bash" ubuntu:20.04
 
-This will start an interactive ubuntu basic docker.
+This will start an interactive ubuntu basic docker image.
 
-You can then install what you need and make a note of how you do it.
+You can then install what you need and make a note of how you do
+it. For example you might need to run apt-get update and apt-get
+install for some basic programs such as wget.
 
-You then change the notes into your docker file
+You can then use the notes you have made into your docker file. By
+adding the commands you ran into 'RUN' statements in your docker file.
 
 For Heroku, install and signup.(https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
-Then naviage to a dir and run
+Then navigate to a dir and run
 
 heroku create
 
-heroku container:push web (you may need to do -a and the app name)
+heroku container:push web (you may need to do -a and the app name if
+you have more than one docker file in the repo as this repo does)
 
-heroku container:release web
+heroku container:release web (maybe -a appname)
 
-heroku open
+heroku open (maybe -a appname)
