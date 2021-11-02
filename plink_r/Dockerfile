@@ -13,6 +13,10 @@ apt install unzip
 
 copy files
 
+RUN mkdir -p /01
+RUN mkdir -p /02
+
+
 COPY myscript.sh /01/myscript.sh
 COPY data /01/data
 
