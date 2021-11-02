@@ -1,3 +1,7 @@
 ### create docker container
 
+docker build -t myplink
+
 ### run docker mounting the data and out dirs
+
+docker run --rm -v $(pwd)/02:/02 myplink
