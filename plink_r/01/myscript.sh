@@ -1,1 +1,1 @@
-plink ../data/1000G_dummy_pheno.ped
+./plink2 --bfile /01/data/EUR.UMOD --freq --out /02/out/test
