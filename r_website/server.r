@@ -1,7 +1,5 @@
 library(shiny)
 
-options(shiny.port = 8000)
-
 
 ui <- fluidPage(
   "Hello, world!"
