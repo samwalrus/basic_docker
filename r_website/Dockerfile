@@ -14,4 +14,6 @@ RUN R -e 'install.packages(c(\
 
 COPY ./server.r /srv/shiny-server/
 
-CMD [`R -e "shiny::runApp('/srv/shiny-server/server.r', host='0.0.0.0', port=3838)"`]
+PORT=8080
+
+CMD [`R -e "shiny::runApp('/srv/shiny-server/server.r', host='0.0.0.0', port=$PORT)"`]
