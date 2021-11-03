@@ -11,3 +11,13 @@ docker build -t my-shiny-app1 .
 # docker run --env PORT=3838 my-shiny-app1 env
 docker run --rm -p 3838:3838  --env PORT=3838 my-shiny-app1
 
+heroku create
+
+heroku container:push web (you may need to do -a and the app name if
+you have more than one docker file in the repo as this repo does)
+
+heroku container:release web (maybe -a appname)
+
+heroku open (maybe -a appname)
+
+
